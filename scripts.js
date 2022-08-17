@@ -2,7 +2,7 @@ const menu = document.querySelector(".menu"); // variable of unordered list
 const menuItems = document.querySelectorAll(".nav-item"); //variable w/ all list items
 const hamburger = document.querySelector(".hamburger"); // variable of hamburger button
 const closeIcon= document.querySelector(".closeIcon"); // var of X/close icon
-const menuIcon = document.querySelector(".menuIcon"); // var of hamburger icon
+const menuIcon = document.querySelector("menuIcon"); // var of hamburger icon
 
 const toggleMenu = () => {
     if(menu.classList.contains("showMenu")) {

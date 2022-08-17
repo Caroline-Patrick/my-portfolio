@@ -5,12 +5,19 @@
       margin: 0;
       box-sizing: border-box;
       font-family: 'Nunito Sans', sans-serif;
+   
     }
-
+body {
+    background-color: #118ab2;
+}
     a {
         text-decoration: none;
         color: white;
     }
+    
+.large-content {
+    display: none;
+}
 
 .hamburger {
     position: fixed;
@@ -22,6 +29,7 @@
     background: white;
     cursor: pointer;
 }
+
 
 .closeIcon {
     display: none;
@@ -47,6 +55,50 @@
 .showMenu {
     transform: translateY(0);
 }
+.card-holder {
+    margin: 2em 0;
+    margin-top: 10vh;
+  }
+  
+  .card {
+    font-size: 3em;
+    font-weight: 800;
+    height: 4em;
+    width: 64em;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+  }
+  
+  .card .subtle {
+    color: #000;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+  
+  .card i {
+    font-size: 3em;
+  }
+  .bg-spring {
+    background:#ffd166 ;
+    
+}
+
+.bg-2{
+    background: #06d6a0;
+}
+
+.bg-3{
+    background: #ef476f;
+}
+.large-cards{
+    display: none;
+}
 }
 
 @media only screen and (min-width: 576px){}
@@ -58,26 +110,82 @@
     }
 
     .large-content {
-        display: block;
+        display: grid;
+        grid-template-columns: .8fr 1.2fr;
+        padding-top: 2%;
+
     }
     
-    .nav-menu {
+    header li {
         display: inline;
       }
     
       header li a {
-        color: rgb(16, 35, 39);
+        color: white;
+        padding: 5%;
 
       }
     
-    
         .nav-menu {
           left: 0%;
-          background-color: #f5f5f5;
           width: 100%;
           text-align: end;
-          padding-right: 15%;
+        grid-column: 2/3;
+
         }
 
+        .navbar, .nav-branding {
+            display: block;
+        }
+  .mobile-cards {
+    display: none;
+  }
+
+.large-cards {
+    display:block;
+}
+
+.large-card-holder {
+    margin: 2em 0;
+    margin-top: 10vh;
+  }
   
+  .card-large {
+    font-size: 3em;
+    font-weight: 800;
+    height: 4em;
+    width: 64em;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+  }
+  
+  .card-large .subtle {
+    color: #000;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+  
+  .card i {
+    font-size: 3em;
+  }
+  .bg-lg-1 {
+    background: -webkit-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
+    background: -o-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
+    background: -moz-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
+    background: linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
+  }
+
+.bg-lg-2{
+    background: #06d6a0;
+}
+
+.bg-lg-3{
+    background: #ef476f;
+}
 }
