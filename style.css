@@ -102,12 +102,83 @@ div > p {
 .bg-3{
     background: #ef476f;
 }
+.bg-lg-1 {background: -webkit-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: -o-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: -moz-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #ef476f 60%, #06d6a0 60%); }
+
 .large-cards{
     display: none;
 }
 /* start gallery/projects */
 img {
   width: 400px;
+}
+
+/* start contact */
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  color: antiquewhite;
+  padding: 25px 15px 25px 10px;
+  
+
+
+}
+h1 {
+  font-size: 25px;
+  padding: 0px 0px 10px 40px;
+  border-bottom: 1px solid #3d405b;
+  margin: -10px -15px 30px -10px;;
+
+}
+label {
+  display: block;
+  margin: 0px;
+}
+label>span {
+  display: none;
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+  border: 1px solid #DADADA;
+  color: rgb(16, 35, 39);
+  height: 50px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 100%;
+  font-size: .3em;
+  line-height: 15px;
+  box-shadow: inset 0px 1px 4px #ECECEC;
+}
+textarea{
+  padding: 5px 3px 3px 5px;
+  height:150px;
+
+}
+.button {
+  background:#118ab2; 
+  border: none;
+  padding: 10px 25px 10px 25px;
+  margin-left: 45%;
+  color:white;
+  border-radius: 3px;
+  font-size: .4em;
+}
+
+.button:hover {
+  background:#ef476f;
+  cursor: pointer;
 }
 }
 
@@ -227,5 +298,8 @@ img {
   column-gap: 10em;
   
   
+}
+.button {
+margin-left: 0%;
 }
 }
