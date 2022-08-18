@@ -201,9 +201,31 @@ img {
     background: #ef476f;
 }
 
+.bg-lg-4 {
+  background:#ffd166;
+}
+
 img {
   display: inline;
   width: 400px;
 }
+/* start gallery/projects */
+#gallery-grid .card-large{
 
+    height: 4em;
+    width: 4em;
+    padding: 0.5em 1em;
+   
+}
+
+#gallery-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  column-gap: 10em;
+  
+  
+}
 }
