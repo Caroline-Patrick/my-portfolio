@@ -93,11 +93,21 @@ body {
     background: #06d6a0;
 }
 
+div > p {
+  font-size: .5em;
+  letter-spacing: 0ch;
+  text-align: center;
+}
+
 .bg-3{
     background: #ef476f;
 }
 .large-cards{
     display: none;
+}
+/* start gallery/projects */
+img {
+  width: 400px;
 }
 }
 
@@ -113,6 +123,7 @@ body {
         display: grid;
         grid-template-columns: .8fr 1.2fr;
         padding-top: 2%;
+
 
     }
     
@@ -143,6 +154,7 @@ body {
 
 .large-cards {
     display:block;
+    text-align: center;
 }
 
 .large-card-holder {
@@ -175,10 +187,10 @@ body {
     font-size: 3em;
   }
   .bg-lg-1 {
-    background: -webkit-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
-    background: -o-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
-    background: -moz-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
-    background: linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #06d6a0 60%, #ef476f 60%);
+    background: -webkit-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: -o-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: -moz-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
+    background: linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
   }
 
 .bg-lg-2{
@@ -188,4 +200,10 @@ body {
 .bg-lg-3{
     background: #ef476f;
 }
+
+img {
+  display: inline;
+  width: 400px;
+}
+
 }
