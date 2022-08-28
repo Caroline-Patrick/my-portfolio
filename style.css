@@ -52,9 +52,18 @@ body {
 
 }
 
+
+
 .showMenu {
     transform: translateY(0);
+    background-color: #118ab2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25em;
 }
+.nav-item {
+  padding-bottom: 5%;
+}
+
 .card-holder {
     margin: 2em 0;
     margin-top: 10vh;
@@ -107,9 +116,16 @@ div > p {
     background: -moz-linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #ef476f 60%, #06d6a0 60%);
     background: linear-gradient(70deg, #ffd166  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #ef476f 60%, #06d6a0 60%); }
 
+
+
+  a:hover {
+    cursor: pointer;
+    color:#ffd166 ;
+  }
 .large-cards{
     display: none;
 }
+
 /* start gallery/projects */
 img {
   width: 400px;
@@ -137,14 +153,6 @@ h1 {
 label {
   display: block;
   margin: 0px;
-}
-label>span {
-  display: none;
-  float: left;
-  width: 20%;
-  text-align: right;
-  padding-right: 10px;
-  margin-top: 10px;
 }
 
 input[type="text"], input[type="email"], textarea, select {
@@ -192,7 +200,7 @@ textarea{
 
     .large-content {
         display: grid;
-        grid-template-columns: .8fr 1.2fr;
+        grid-template-columns: .3fr 1.7fr;
         padding-top: 2%;
 
 
@@ -204,7 +212,9 @@ textarea{
     
       header li a {
         color: white;
-        padding: 5%;
+        padding: 2%;
+        font-size: 1.25em;
+        font-family: 'Nunito Sans', sans-serif;
 
       }
     
